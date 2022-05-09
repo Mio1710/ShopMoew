@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/*menu cấp 1*/
+.home-banner{
+  font-size: xx-large;
+  font-weight: 900px;
+  font-family: 'Pacifico';
+}
+.menu{
+  display: block;
+  position: absolute;/*ẨN các phần từ*/
+  top: 0;
+  width: 100%;
+  background-color: #fcd1d1;
+  text-align: center;
+  z-index: 6;
+}
+.menu li{
+  list-style-type: none;/*Bỏ các kí hiệu ở đầu hàng*/
+  display: inline;
+  margin-right: 20px;
+  font-size: 20px;
+  padding: -80px;
+ 
+}
+.menu a:link{
+  color:rgb(0, 0, 0) ;/*đỏi màu chữ*/
+  text-decoration: none;/*Bỏ dấy gach chân của thẻ a*/
+}
+.menu a:hover{
+  color:rgb(216, 154, 154) ;/*đỏi màu chữ*/
+  text-decoration: none;/*Bỏ dấy gach chân của thẻ a*/
+  background-color: #ffdcdc;
+}
+.menu li > ul{      
+  display: none;
+}
+.menu li:hover ul{      
+  display: block;
+  position: absolute;
+
+  background-color: #fcd1d1;
+  margin: 0;
+}
+.menu li:hover ul li a:link{      
+  display: block;
+  margin-left: 0px ;
+}
+.menu #p1{
+  left: 90px;
+}
+.menu #p2{
+  left: 280px;
+}
+.menu #p3{
+  left: 380px;
+}
+.menu #p4{
+  left: 480px;
+}
+.menu #p5{
+  left: 630px;
+}
+.menu #p6{
+  left: 840px;
+}
+.logo{
+  float: left;
+}
+.log{
+  float: right;
+}
+/*Menu cấp 2, 3*/
+#menu2 li{ 
+  position: relative;
+
+  text-align: center;
+}
+ #menu2 li .sub_menu{ 
+  position: absolute ; 
+  display: none;
+  width: 350px ;
+  background-color: #fcd1d1 ;
+  top: 0px ;
+  left: 100% ;
+  text-align: right;
+}
+#menu2 li .sub_menu{ 
+  background-color: #e6bbbb ;
+ 
+}
+#p1 .sub_menu{
+  margin-top: -50px;
+}
+#menu2 li:hover>.sub_menu { 
+  display: block;
+  
+}
+#menu2 li:hover>.sub_menu { 
+  top: 44px;
+  position: absolute;
+  left: 0px;
+}
+#menu2 li #p1 .sub_menu{ 
+  background-color: #e4a8a8 ;
+ 
+}
+#menu2 li #p2 .sub_menu{ 
+  background-color: #e4a8a8 ;
+ 
+}#menu2 li #p3 .sub_menu{ 
+  background-color: #e4a8a8 ;
+ 
+}
+#menu2 li #p4 .sub_menu{ 
+  background-color: #e4a8a8 ;
+ 
+}
+#menu2 li #p5 .sub_menu{ 
+  background-color: #e4a8a8 ;
+ 
+}
+#menu2 li #p1  #c2{ 
+  margin-top: -8px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c3{ 
+  margin-top: -7px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c4{ 
+  margin-top: -6px;
+  margin-left: 20px;
+}
+
+#menu2 li #p1  #c5{ 
+  margin-top: -10px;
+  margin-left: 18px;
+}
+#menu2 li #p1  #c1 #d1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p1  #c1 #d2{ 
+  margin-top: -5px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c1 #d3{ 
+  margin-top: -10px;
+  margin-left: 15px;
+}
+#menu2 li #p1  #c2 #d1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p1  #c2 #d2{ 
+  margin-top: -5px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c2 #d3{ 
+  margin-top: -10px;
+  margin-left: 15px;
+}
+#menu2 li #p1  #c3 #d1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p1  #c3 #d2{ 
+  margin-top: -5px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c3 #d3{ 
+  margin-top: -10px;
+  margin-left: 15px;
+}
+#menu2 li #p1  #c4 #d1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p1  #c4 #d2{ 
+  margin-top: -5px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c4 #d3{ 
+  margin-top: -10px;
+  margin-left: 15px;
+}
+#menu2 li #p2{ 
+  width: 240px ;
+}
+#menu2 li #p2 #c1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p2 #c2{ 
+  margin-top: -8px;
+  margin-left: 20px;
+}
+#menu2 li #p2 #c3{ 
+  margin-top: -8px;
+  margin-left: 20px;
+}
+#menu2 li #p2 #c4{ 
+  margin-top: -8px;
+  margin-left: 20px;
+}
+#menu2 li #p2 #c5{ 
+  margin-top: -8px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c5 #d1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p1  #c5 #d2{ 
+  margin-top: -5px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c5 #d3{ 
+  margin-top: -10px;
+  margin-left: 15px;
+}
+
+#menu2 li #p3{ 
+  width: 240px ;
+}
+#menu2 li #p3 #c1{ 
+  margin-top: -46px;
+  margin-left: 0px;
+}
+#menu2 li #p3 #c2{ 
+  margin-top: -10px;
+  margin-left: 18px;
+}
+#menu2 li #p3 #c3{ 
+  margin-top: -10px;
+  margin-left: 18px;
+}
+
+#menu2 li #p4{ 
+ 
+  width: 220px ;
+}
+#menu2 li #p5{ 
+ 
+  width: 240px ;
+}
+#menu2 li #p6{ 
+ 
+  width: 220px ;
+}
+/**/
+.bar,.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar {
+  height: 60px;
+  width: 100%;
+  background-color: #fcd1d1;
+}
+.bar .logo {
+  width: 8%;
+}
+
+.bar .logo img {
+  height: 50px;
+  width: auto;
+  border-radius: 20px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.home-banner {
+  display: block;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+.connect {
+  margin-right: 10px;
+  width: 18%;
+}
+.search form {
+  width: 100%;
+}
+
+.search {
+  width: 40%;
+  position: relative;
+  float: right;
+  margin-top: 10px; 
+  margin-right: -450px;
+}
+.search button {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+.search button i {
+  color: #333;
+}
+.search input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 8px 35px 8px 18px;
+  border-radius: 25px;
+}
+/*-------------------------------------------------------------*/
+body{
+    display: flex;
+    justify-content: center;/*đưa các phần tử ra giũa*/
+   /* align-items: center; /*canh phân trên ra giữa*/
+    text-align: center;/*đưa các chữ ra giữa*/
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../IMG/Dangki/Dangki.jpg);
+    font-size: 25px;
+}
+#dangki{
+    background:none;
+    border-radius: 20px;
+    font-family: 'Pacifico';
+    margin-top: 60px;
+}
+#dangki .noidung{
+    padding: 10px;
+    display: flex;
+    font-size: 22px;
+}
+#dangki .noidung input{
+    background:none;
+    border: none;
+    border-bottom:2px solid black;
+}
+#cv{
+    background: none;
+    border: none;
+    font-size: 20px;
+
+}
+#ntm{
+    color:black;
+    font-size: 20px;
+}
+#dangki .noidung select{
+    background:none;
+}
+#dangki .noidung #nut{
+    background-color: rgb(216, 154, 154) ;
+    margin: auto;
+    width: 120px;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+}
+#dangki .noidung #nut:hover{
+    background-color: paleturquoise;
+    width: 120px;
+}

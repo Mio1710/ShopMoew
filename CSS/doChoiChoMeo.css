@@ -1,0 +1,500 @@
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/*menu cấp 1*/
+ .home-banner{
+  font-size: xx-large;
+  font-weight: 900px;
+  font-family: 'Pacifico';
+}
+.menu{
+  display: block;
+  position: absolute;/*ẨN các phần từ*/
+  top: 0;
+  width: 100%;
+  background-color: #fcd1d1;
+  text-align: center;
+  z-index: 6;
+}
+.menu li{
+  list-style-type: none;/*Bỏ các kí hiệu ở đầu hàng*/
+  display: inline;
+  margin-right: 20px;
+  font-size: 20px;
+  padding: -80px;
+ 
+}
+.menu a:link{
+  color:rgb(0, 0, 0) ;/*đỏi màu chữ*/
+  text-decoration: none;/*Bỏ dấy gach chân của thẻ a*/
+}
+.menu a:hover{
+  color:rgb(216, 154, 154) ;/*đỏi màu chữ*/
+  text-decoration: none;/*Bỏ dấy gach chân của thẻ a*/
+  background-color: #ffdcdc;
+}
+.menu li > ul{      
+  display: none;
+}
+.menu li:hover ul{      
+  display: block;
+  position: absolute;
+
+  background-color: #fcd1d1;
+  margin: 0;
+}
+.menu li:hover ul li a:link{      
+  display: block;
+  margin-left: 0px ;
+}
+.menu #p1{
+  left: 90px;
+}
+.menu #p2{
+  left: 280px;
+}
+.menu #p3{
+  left: 380px;
+}
+.menu #p4{
+  left: 480px;
+}
+.menu #p5{
+  left: 630px;
+}
+.menu #p6{
+  left: 840px;
+}
+.logo{
+  float: left;
+}
+.log{
+  float: right;
+}
+/*Menu cấp 2, 3*/
+#menu2 li{ 
+  position: relative;
+
+  text-align: center;
+}
+ #menu2 li .sub_menu{ 
+  position: absolute ; 
+  display: none;
+  width: 350px ;
+  background-color: #fcd1d1 ;
+  top: 0px ;
+  left: 100% ;
+  text-align: right;
+}
+#menu2 li .sub_menu{ 
+  background-color: #e6bbbb ;
+ 
+}
+#p1 .sub_menu{
+  margin-top: -50px;
+}
+#menu2 li:hover>.sub_menu { 
+  display: block;
+  
+}
+#menu2 li:hover>.sub_menu { 
+  top: 44px;
+  position: absolute;
+  left: 0px;
+}
+#menu2 li #p1 .sub_menu{ 
+  background-color: #e4a8a8 ;
+ 
+}
+#menu2 li #p2 .sub_menu{ 
+  background-color: #e4a8a8 ;
+ 
+}#menu2 li #p3 .sub_menu{ 
+  background-color: #e4a8a8 ;
+ 
+}
+#menu2 li #p4 .sub_menu{ 
+  background-color: #e4a8a8 ;
+ 
+}
+#menu2 li #p5 .sub_menu{ 
+  background-color: #e4a8a8 ;
+ 
+}
+#menu2 li #p1  #c2{ 
+  margin-top: -8px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c3{ 
+  margin-top: -7px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c4{ 
+  margin-top: -6px;
+  margin-left: 20px;
+}
+
+#menu2 li #p1  #c5{ 
+  margin-top: -10px;
+  margin-left: 18px;
+}
+#menu2 li #p1  #c1 #d1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p1  #c1 #d2{ 
+  margin-top: -5px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c1 #d3{ 
+  margin-top: -10px;
+  margin-left: 15px;
+}
+#menu2 li #p1  #c2 #d1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p1  #c2 #d2{ 
+  margin-top: -5px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c2 #d3{ 
+  margin-top: -10px;
+  margin-left: 15px;
+}
+#menu2 li #p1  #c3 #d1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p1  #c3 #d2{ 
+  margin-top: -5px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c3 #d3{ 
+  margin-top: -10px;
+  margin-left: 15px;
+}
+#menu2 li #p1  #c4 #d1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p1  #c4 #d2{ 
+  margin-top: -5px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c4 #d3{ 
+  margin-top: -10px;
+  margin-left: 15px;
+}
+#menu2 li #p2{ 
+  width: 240px ;
+}
+#menu2 li #p2 #c1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p2 #c2{ 
+  margin-top: -8px;
+  margin-left: 20px;
+}
+#menu2 li #p2 #c3{ 
+  margin-top: -8px;
+  margin-left: 20px;
+}
+#menu2 li #p2 #c4{ 
+  margin-top: -8px;
+  margin-left: 20px;
+}
+#menu2 li #p2 #c5{ 
+  margin-top: -8px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c5 #d1{ 
+  margin-top: -45px;
+  margin-left: 0px;
+}
+#menu2 li #p1  #c5 #d2{ 
+  margin-top: -5px;
+  margin-left: 20px;
+}
+#menu2 li #p1  #c5 #d3{ 
+  margin-top: -10px;
+  margin-left: 15px;
+}
+
+#menu2 li #p3{ 
+  width: 240px ;
+}
+#menu2 li #p3 #c1{ 
+  margin-top: -46px;
+  margin-left: 0px;
+}
+#menu2 li #p3 #c2{ 
+  margin-top: -10px;
+  margin-left: 18px;
+}
+#menu2 li #p3 #c3{ 
+  margin-top: -10px;
+  margin-left: 18px;
+}
+
+#menu2 li #p4{ 
+ 
+  width: 220px ;
+}
+#menu2 li #p5{ 
+ 
+  width: 240px ;
+}
+#menu2 li #p6{ 
+ 
+  width: 220px ;
+}
+/**/
+.bar,.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar {
+  height: 60px;
+  width: 100%;
+  background-color: #fcd1d1;
+}
+.bar .logo {
+  width: 8%;
+}
+
+.bar .logo img {
+  height: 50px;
+  width: auto;
+  border-radius: 20px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.home-banner {
+  display: block;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
+.connect {
+  margin-right: 10px;
+  width: 18%;
+}
+.search form {
+  width: 100%;
+}
+
+.search {
+  width: 40%;
+  position: relative;
+  float: right;
+  margin-top: 10px; 
+  margin-right: -450px;
+}
+.search button {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+.search button i {
+  color: #333;
+}
+.search input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 8px 35px 8px 18px;
+  border-radius: 25px;
+} 
+/**************************/
+body{
+  display: flex;
+  justify-content: center;/*đưa các phần tử ra giũa*/
+  font-size: 17px;
+  font-family:'Times New Roman', Times, serif;
+  color: black;
+}
+#content{
+  margin-top: 100px;  
+}
+#left{
+  float: left;
+}
+
+
+ #right{
+  margin-left: 20px;
+  float: left;
+  font-size: xx-large;
+  
+}
+#right .dat_hang{
+ background-color: #e6bbbb;
+  float: right;
+  border: 1px solid #e6bbbb ;
+  width: 100%;
+}
+#right .dat_hang a:hover{
+  background-color: white;
+
+}
+#right .tu_van{
+  background-color: #b98888;
+  margin-top: 50px;
+   border: 1px solid #e6bbbb    
+}
+
+#right .tu_van a:hover{
+   background-color: white;
+}
+#bottom{
+  clear: both;
+  background-color: white;
+}
+#bottom ul li{
+ margin-left: 20px;
+}
+#bottom img{
+  width: 500px;
+  
+  border: 1px solid gray;
+ }
+ 
+#hinh1{
+   float: left;
+   padding: 20px;
+ }
+#hinh2{
+  float: left;
+  padding: 20px;
+}
+#hinh3{
+  clear: both;
+  float: left;
+  padding: 20px;
+}
+#hinh4{
+  padding: 20px;
+}
+.container {
+  position: relative;
+  top: 70px;
+  padding-bottom: 100px;
+}
+.slider {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.mySlides {
+  display: none;
+  position: relative;
+}
+img {
+  vertical-align: middle;
+}
+.mySlides img {
+  height: 550px;
+  width: 550px;
+
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.text{
+  text-shadow: 2px 2px 8px #FF0000;
+  text-align: center;
+
+}
+
+
+/* footer*/
+.box_footer {
+  width: 100%;
+  padding-top: 30px;
+  background-color: black;
+  clear: both;
+}
+.box_footer h3 {
+  font-size: 25px;
+  padding: 15px;
+  color: #ff9292;
+  font-family: 'Pacifico';
+}
+.content__footer {
+  width: 80%;
+  background-color: #ff9292;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 100%;
+}
+.footer-col ul li {
+  padding: 10px;
+  font-size: 18px;
+  list-style: none;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col {
+  padding: 0 20px;
+  width: 25%;
+}
+.footer-col h4 {
+  font-size: 20px;
+  padding: 15px 0;
+}
+.footer-col ul li a:hover {
+  color: #fff;
+  padding-left: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
